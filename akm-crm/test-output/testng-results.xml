@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-18T21:52:18 IST" name="Default suite" finished-at="2021-10-18T21:52:18 IST" duration-ms="22">
+  <suite started-at="2021-10-18T22:15:25 IST" name="Default suite" finished-at="2021-10-18T22:15:37 IST" duration-ms="11732">
     <groups>
     </groups>
-    <test started-at="2021-10-18T21:52:18 IST" name="Default test" finished-at="2021-10-18T21:52:18 IST" duration-ms="22">
+    <test started-at="2021-10-18T22:15:25 IST" name="Default test" finished-at="2021-10-18T22:15:37 IST" duration-ms="11732">
       <class name="Base.BaseClass">
-        <test-method signature="sampletest()[pri:0, instance:Base.BaseClass@69fb6037]" started-at="2021-10-18T21:52:18 IST" name="sampletest" finished-at="2021-10-18T21:52:18 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Base.BaseClass@58695725]" started-at="2021-10-18T22:15:25 IST" name="setup" finished-at="2021-10-18T22:15:30 IST" duration-ms="4704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampletest()[pri:0, instance:Base.BaseClass@58695725]" started-at="2021-10-18T22:15:30 IST" name="sampletest" finished-at="2021-10-18T22:15:37 IST" duration-ms="7010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampletest -->
