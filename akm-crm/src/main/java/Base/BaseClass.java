@@ -10,9 +10,10 @@ import io.github.bonigarcia.wdm.config.OperatingSystem;
 
 public class BaseClass {
 	public static WebDriver driver;
+	
 	@BeforeClass
 	public void setup() {
-		WebDriverManager.chromedriver().operatingSystem(OperatingSystem.WIN).setup();
+		WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
 		driver = new ChromeDriver();
 	}
 
