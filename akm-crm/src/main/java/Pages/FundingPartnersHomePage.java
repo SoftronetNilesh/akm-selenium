@@ -25,6 +25,21 @@ public class FundingPartnersHomePage extends BaseClass {
 
 	
 
+	public WebElement getFundPartnerLinkTab() {
+		return fundPartnerLinkTab;
+	}
+
+
+	public WebElement getAddFundingPartnerButton() {
+		return addFundingPartnerButton;
+	}
+
+
+	public WebElement getEditFirstFundingPartnerRecord() {
+		return editFirstFundingPartnerRecord;
+	}
+
+
 	public static class addFundingPartner{
 		
 		public addFundingPartner() {
