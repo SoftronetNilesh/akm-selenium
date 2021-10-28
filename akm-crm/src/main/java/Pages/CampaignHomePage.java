@@ -62,4 +62,5 @@ public class CampaignHomePage extends BaseClass{
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
 	}
+
 }

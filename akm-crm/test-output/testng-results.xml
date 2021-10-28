@@ -2,20 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-18T22:15:25 IST" name="Default suite" finished-at="2021-10-18T22:15:37 IST" duration-ms="11732">
+  <suite started-at="2021-10-28T15:12:24 IST" name="Default suite" finished-at="2021-10-28T15:12:42 IST" duration-ms="17637">
     <groups>
     </groups>
-    <test started-at="2021-10-18T22:15:25 IST" name="Default test" finished-at="2021-10-18T22:15:37 IST" duration-ms="11732">
-      <class name="Base.BaseClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Base.BaseClass@58695725]" started-at="2021-10-18T22:15:25 IST" name="setup" finished-at="2021-10-18T22:15:30 IST" duration-ms="4704" status="PASS">
+    <test started-at="2021-10-28T15:12:24 IST" name="Default test" finished-at="2021-10-28T15:12:42 IST" duration-ms="17637">
+      <class name="testSuite.FundPartnerTestSuite">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSuite.FundPartnerTestSuite@78123e82]" started-at="2021-10-28T15:12:24 IST" name="setup" finished-at="2021-10-28T15:12:31 IST" duration-ms="7424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sampletest()[pri:0, instance:Base.BaseClass@58695725]" started-at="2021-10-18T22:15:30 IST" name="sampletest" finished-at="2021-10-18T22:15:37 IST" duration-ms="7010" status="PASS">
+        <test-method signature="ProductPurchaseSuccessFlowTest()[pri:0, instance:testSuite.FundPartnerTestSuite@78123e82]" started-at="2021-10-28T15:12:31 IST" name="ProductPurchaseSuccessFlowTest" finished-at="2021-10-28T15:12:41 IST" duration-ms="10103" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sampletest -->
-      </class> <!-- Base.BaseClass -->
+        </test-method> <!-- ProductPurchaseSuccessFlowTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testSuite.FundPartnerTestSuite@78123e82]" started-at="2021-10-28T15:12:41 IST" name="tearDown" finished-at="2021-10-28T15:12:42 IST" duration-ms="90" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProductPurchaseSuccessFlowTest status=SUCCESS method=FundPartnerTestSuite.ProductPurchaseSuccessFlowTest()[pri:0, instance:testSuite.FundPartnerTestSuite@78123e82] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuite.FundPartnerTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
