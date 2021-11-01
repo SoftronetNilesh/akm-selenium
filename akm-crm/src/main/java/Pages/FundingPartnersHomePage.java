@@ -36,9 +36,9 @@ public class FundingPartnersHomePage extends BaseClass {
 		return editFirstFundingPartnerRecord;
 	}
 
-	public static class addFundingPartner{
+	public static class AddFundingPartner{
 		
-		public addFundingPartner() {
+		public AddFundingPartner() {
 			// TODO Auto-generated constructor stub
 			super();
 			PageFactory.initElements(driver, this);
@@ -56,13 +56,13 @@ public class FundingPartnersHomePage extends BaseClass {
 		@FindBy(xpath="//label[text()='Email:']//following-sibling::div/input")
 		private WebElement getFundingPartnerEmailField;
 
-		@FindBy(xpath="//input[@id='tax_receipt_issued']")
+		@FindBy(xpath="//label[@for='tax_receipt_issued']")
 		private WebElement fundingPartnerTaxReceiptCheckbox;
 
 		@FindBy(xpath="//input[@id='inactive']")
 		private WebElement fundingPartnerInactiveCheckbox;
 
-		@FindBy(xpath="//button[normalize-space()='Add']")
+		@FindBy(xpath="(//button[normalize-space()='Add'])[2]")
 		private WebElement addFundingPartnerSubmitButton;
 
 		@FindBy(xpath="//div[@class='toast-error ngx-toastr ng-trigger ng-trigger-flyInOut']")
@@ -307,4 +307,5 @@ public class FundingPartnersHomePage extends BaseClass {
 			return editFirstPartnerCampaign;
 		}
 	}
+
 }
