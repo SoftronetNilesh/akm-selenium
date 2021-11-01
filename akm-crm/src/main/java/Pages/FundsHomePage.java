@@ -18,6 +18,7 @@ public class FundsHomePage extends BaseClass {
 	
 	@FindBy(xpath="//button[.='Clear']")
 	private WebElement clearBtn;
+	
 	@FindBy(xpath="//button[.='Add']")
 	private WebElement addBtn;
 

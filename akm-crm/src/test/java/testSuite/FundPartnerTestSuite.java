@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 import Base.BaseClass;
 import Pages.FundingPartnersHomePage;
 import Pages.FundingPartnersHomePage.AddFundingPartner;
+import Pages.FundingPartnersHomePage.EditFundingPartner;
+import Pages.FundingPartnersHomePage.EditFundingPartnerHome;
 import Pages.LoginPage;
 
 	public class FundPartnerTestSuite extends BaseClass {
@@ -19,6 +21,8 @@ import Pages.LoginPage;
 		FundingPartnersHomePage fundingPartnersHomePage;
 		LoginPage loginPage;
 		AddFundingPartner addFundPartner;
+		EditFundingPartnerHome editFundingPartnerHome;
+		EditFundingPartner editFundingPartner;
 		
 		@BeforeMethod
 		public void setup() {
@@ -26,6 +30,8 @@ import Pages.LoginPage;
 			fundingPartnersHomePage=new FundingPartnersHomePage();
 			loginPage=new LoginPage();
 			addFundPartner=new AddFundingPartner();
+			editFundingPartnerHome=new EditFundingPartnerHome();
+			editFundingPartner=new EditFundingPartner();
 			loginPage.login();
 			javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);",fundingPartnersHomePage.getFundPartnerLinkTab());
 			fundingPartnersHomePage.getFundPartnerLinkTab().click();
@@ -58,8 +64,14 @@ import Pages.LoginPage;
 			addFundPartner.getFundingPartnerPhoneField().sendKeys("+9172636823682");
 			addFundPartner.getGetFundingPartnerEmailField().sendKeys("test@test.com");
 			addFundPartner.getAddFundingPartnerSubmitButton().click();
+			Assert.assertEquals(fundingPartnersHomePage.verifyFundingPartnerName("Test"), true);
+			wait.until(ExpectedConditions.visibilityOf(editFundingPartnerHome.getEditFundingPartnerBtn()));
+			editFundingPartnerHome.getEditFundingPartnerBtn().click();
+			Assert.assertEquals((editFundingPartnerHome.getName().getText().trim().split(": "))[1], "Test");
+			Assert.assertEquals((editFundingPartnerHome.getContact().getText().trim().split(": "))[1], "Test Name");
+			Assert.assertEquals((editFundingPartnerHome.getPhone().getText().trim().split(": "))[1], "+9172636823682");
+			Assert.assertEquals((editFundingPartnerHome.getEmail().getText().trim().split(": "))[1], "test@test.com");
 		}
-
 
 		@AfterMethod
 		public void tearDown(ITestResult result) {
