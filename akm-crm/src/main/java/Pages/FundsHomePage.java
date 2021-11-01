@@ -39,6 +39,7 @@ public class FundsHomePage extends BaseClass {
 	}
 	
 	public static class AddFund{
+		
 		public AddFund() {
 			// TODO Auto-generated constructor stub
 			super();
