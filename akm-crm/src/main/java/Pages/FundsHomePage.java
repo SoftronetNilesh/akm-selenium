@@ -1,11 +1,8 @@
 package Pages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import Base.BaseClass;
-
 public class FundsHomePage extends BaseClass {
 	
 	public FundsHomePage() {
@@ -13,7 +10,6 @@ public class FundsHomePage extends BaseClass {
 		super();
 		PageFactory.initElements(driver, this);
 	}
-
 	@FindBy(name="search")
 	private WebElement searchName;
 	
@@ -22,9 +18,25 @@ public class FundsHomePage extends BaseClass {
 	
 	@FindBy(xpath="//button[.='Clear']")
 	private WebElement clearBtn;
-
 	@FindBy(xpath="//button[.='Add']")
 	private WebElement addBtn;
+
+	//Getters for WebElements
+	public WebElement getSearchName() {
+		return searchName;
+	}
+	
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+	
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+	
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
 	
 	public static class AddFund{
 		public AddFund() {
@@ -47,5 +59,26 @@ public class FundsHomePage extends BaseClass {
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getFundName() {
+			return fundName;
+		}
+
+		public WebElement getUtmFund() {
+			return utmFund;
+		}
+
+		public WebElement getPisInactiveCheck() {
+			return pisInactiveCheck;
+		}
+
+		public WebElement getRestrictedCheck() {
+			return restrictedCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 }

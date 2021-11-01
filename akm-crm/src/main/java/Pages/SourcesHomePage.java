@@ -25,6 +25,23 @@ public class SourcesHomePage extends BaseClass{
 	@FindBy(xpath="//button[.='Add']")
 	private WebElement addBtn;
 	
+	//Getters for WebElements
+	public WebElement getSearchName() {
+		return searchName;
+	}
+
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
 	public static class AddSource{
 		public AddSource() {
 			// TODO Auto-generated constructor stub
@@ -43,6 +60,23 @@ public class SourcesHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getPurposeName() {
+			return purposeName;
+		}
+
+		public WebElement getUtmCampaign() {
+			return utmCampaign;
+		}
+
+		public WebElement getPisInactiveCheck() {
+			return pisInactiveCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 		
 	}
 	

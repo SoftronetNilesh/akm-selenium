@@ -22,23 +22,19 @@ public class FundingPartnersHomePage extends BaseClass {
 
 	@FindBy(xpath = "//tbody/tr/td[1]")
 	private WebElement editFirstFundingPartnerRecord;
-
 	
-
+	//Getters for WebElements
 	public WebElement getFundPartnerLinkTab() {
 		return fundPartnerLinkTab;
 	}
-
 
 	public WebElement getAddFundingPartnerButton() {
 		return addFundingPartnerButton;
 	}
 
-
 	public WebElement getEditFirstFundingPartnerRecord() {
 		return editFirstFundingPartnerRecord;
 	}
-
 
 	public static class addFundingPartner{
 		
@@ -75,7 +71,42 @@ public class FundingPartnersHomePage extends BaseClass {
 		@FindBy(xpath="//button[@class='close pull-right']")
 		private WebElement closeForm;
 
-	
+		//Getters for WebElements
+		public WebElement getFundingPartnerNameField() {
+			return fundingPartnerNameField;
+		}
+
+		public WebElement getFundPartnerContactNameField() {
+			return fundPartnerContactNameField;
+		}
+
+		public WebElement getFundingPartnerPhoneField() {
+			return fundingPartnerPhoneField;
+		}
+
+		public WebElement getGetFundingPartnerEmailField() {
+			return getFundingPartnerEmailField;
+		}
+
+		public WebElement getFundingPartnerTaxReceiptCheckbox() {
+			return fundingPartnerTaxReceiptCheckbox;
+		}
+
+		public WebElement getFundingPartnerInactiveCheckbox() {
+			return fundingPartnerInactiveCheckbox;
+		}
+
+		public WebElement getAddFundingPartnerSubmitButton() {
+			return addFundingPartnerSubmitButton;
+		}
+
+		public WebElement getFundingPartnerErrorPopup() {
+			return fundingPartnerErrorPopup;
+		}
+
+		public WebElement getCloseForm() {
+			return closeForm;
+		}			
 	}
 
 	public static class EditFundingPartnerHome{
@@ -100,7 +131,28 @@ public class FundingPartnersHomePage extends BaseClass {
 
 		@FindBy(css="td:nth-child(1)")
 		private WebElement editFirstRecord;
-	}
+		
+		//Getters for WebElements
+		public WebElement getDetailsTab() {
+			return detailsTab;
+		}
+
+		public WebElement getCampaignTab() {
+			return campaignTab;
+		}
+
+		public WebElement getEditFundingPartnerBtn() {
+			return editFundingPartnerBtn;
+		}
+
+		public WebElement getAddPartnerCampaignButton() {
+			return addPartnerCampaignButton;
+		}
+
+		public WebElement getEditFirstRecord() {
+			return editFirstRecord;
+		}		
+}
 
 	public static class EditFundingPartner{
 		
@@ -133,6 +185,39 @@ public class FundingPartnersHomePage extends BaseClass {
 
 		@FindBy(xpath = "//div[@class='modal-dialog']//button[@type='button'][normalize-space()='Update']")
 		private WebElement updateFundPartnerBtn;
+		
+		//Getters for WebElements
+		public WebElement getEditName() {
+			return editName;
+		}
+
+		public WebElement getEditContactName() {
+			return editContactName;
+		}
+
+		public WebElement getEditPhone() {
+			return editPhone;
+		}
+
+		public WebElement getEditEmail() {
+			return editEmail;
+		}
+
+		public WebElement getEditTaxReciptFlg() {
+			return editTaxReciptFlg;
+		}
+
+		public WebElement getEditInactiveFlg() {
+			return editInactiveFlg;
+		}
+
+		public WebElement getEditNotes() {
+			return editNotes;
+		}
+
+		public WebElement getUpdateFundPartnerBtn() {
+			return updateFundPartnerBtn;
+		}
 	}
 
 
@@ -176,5 +261,50 @@ public class FundingPartnersHomePage extends BaseClass {
 
 		@FindBy(xpath="//*[@id='campaignTab-panel']//i[@class='fas fa-pencil-alt']")
 		private WebElement editFirstPartnerCampaign;
+		
+		//Getters for WebElements
+		public WebElement getAddFundingPartnerCampaignName() {
+			return addFundingPartnerCampaignName;
+		}
+
+		public WebElement getAddFundingPartnerCampaignContactName() {
+			return addFundingPartnerCampaignContactName;
+		}
+
+		public WebElement getCampaignStartDate() {
+			return campaignStartDate;
+		}
+
+		public WebElement getCampaignEndDate() {
+			return campaignEndDate;
+		}
+
+		public WebElement getReceivedCurrencyType() {
+			return receivedCurrencyType;
+		}
+
+		public WebElement getReceivedCurrencyAmount() {
+			return receivedCurrencyAmount;
+		}
+
+		public WebElement getTaxReceiptIssuedFlg() {
+			return taxReceiptIssuedFlg;
+		}
+
+		public WebElement getCampaignInactiveRadioFlg() {
+			return campaignInactiveRadioFlg;
+		}
+
+		public WebElement getCampaignNotes() {
+			return CampaignNotes;
+		}
+
+		public WebElement getUpdateCampaignBtn() {
+			return UpdateCampaignBtn;
+		}
+
+		public WebElement getEditFirstPartnerCampaign() {
+			return editFirstPartnerCampaign;
+		}
 	}
 }

@@ -1,11 +1,8 @@
 package Pages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import Base.BaseClass;
-
 public class AppealHomePage extends BaseClass{
 	public AppealHomePage() {
 		// TODO Auto-generated constructor stub
@@ -21,10 +18,22 @@ public class AppealHomePage extends BaseClass{
 	
 	@FindBy(xpath="//button[.='Clear']")
 	private WebElement clearBtn;
-
 	@FindBy(xpath="//button[.='Add']")
 	private WebElement addBtn;
 	
+	//Getters for WebElements
+	public WebElement getSearchName() {
+		return searchName;
+	}
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
 	public static class AddAppeal{
 		public AddAppeal() {
 			// TODO Auto-generated constructor stub
@@ -43,6 +52,24 @@ public class AppealHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+
+		//Getters for WebElements
+		public WebElement getPurposeName() {
+			return purposeName;
+		}
+
+		public WebElement getUtmCampaign() {
+			return utmCampaign;
+		}
+
+		public WebElement getPisInactiveCheck() {
+			return pisInactiveCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
+		
 		
 	}
 	

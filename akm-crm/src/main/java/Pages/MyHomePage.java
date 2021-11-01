@@ -163,4 +163,204 @@ public class MyHomePage extends BaseClass{
 	@FindBy(xpath="//*[@class='sidebar-minimizer']")
 	private WebElement minimizerLinkTab;
 	
+	//Getters for WebElements
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+
+	public WebElement getConstituentTab() {
+		return constituentTab;
+	}
+
+	public WebElement getMembershipTab() {
+		return membershipTab;
+	}
+
+	public WebElement getContributionsTab() {
+		return contributionsTab;
+	}
+
+	public WebElement getPledgeTab() {
+		return pledgeTab;
+	}
+
+	public WebElement getProspectTab() {
+		return prospectTab;
+	}
+
+	public WebElement getAskTab() {
+		return askTab;
+	}
+
+	public WebElement getGrantTab() {
+		return grantTab;
+	}
+
+	public WebElement getTaskTab() {
+		return taskTab;
+	}
+
+	public WebElement getActivityTab() {
+		return activityTab;
+	}
+
+	public WebElement getSelectConstituents() {
+		return selectConstituents;
+	}
+
+	public WebElement getSelectAllRegion() {
+		return selectAllRegion;
+	}
+
+	public WebElement getSelectAllCountries() {
+		return selectAllCountries;
+	}
+
+	public WebElement getSelectAllStates() {
+		return selectAllStates;
+	}
+
+	public WebElement getSelectAllTerritory() {
+		return selectAllTerritory;
+	}
+
+	public WebElement getSelectAllLabels() {
+		return selectAllLabels;
+	}
+
+	public WebElement getSpeedSearch() {
+		return speedSearch;
+	}
+
+	public WebElement getClearFilterBtn() {
+		return clearFilterBtn;
+	}
+
+	public WebElement getAddConstituentsBtn() {
+		return addConstituentsBtn;
+	}
+
+	public WebElement getExportConstituentsBtn() {
+		return exportConstituentsBtn;
+	}
+
+	public WebElement getSelectUser() {
+		return selectUser;
+	}
+
+	public WebElement getConstituentsCount() {
+		return constituentsCount;
+	}
+
+	public WebElement getMembershipsCount() {
+		return membershipsCount;
+	}
+
+	public WebElement getActiveMembershipsCount() {
+		return activeMembershipsCount;
+	}
+
+	public WebElement getPledgesCount() {
+		return pledgesCount;
+	}
+
+	public WebElement getThisMonthCount() {
+		return thisMonthCount;
+	}
+
+	public WebElement getThisYearCount() {
+		return thisYearCount;
+	}
+
+	public WebElement getLastYearThisMonthCount() {
+		return lastYearThisMonthCount;
+	}
+
+	public WebElement getLastYearCount() {
+		return lastYearCount;
+	}
+
+	public WebElement getMyHomeLinkTab() {
+		return myHomeLinkTab;
+	}
+
+	public WebElement getDashboardLinkTab() {
+		return dashboardLinkTab;
+	}
+
+	public WebElement getReportsLinkTab() {
+		return reportsLinkTab;
+	}
+
+	public WebElement getConstituentsLinkTab() {
+		return constituentsLinkTab;
+	}
+
+	public WebElement getProspectsLinkTab() {
+		return prospectsLinkTab;
+	}
+
+	public WebElement getGrantsLinkTab() {
+		return grantsLinkTab;
+	}
+
+	public WebElement getMembershipsLinkTab() {
+		return membershipsLinkTab;
+	}
+
+	public WebElement getPledgesLinkTab() {
+		return pledgesLinkTab;
+	}
+
+	public WebElement getContributionsLinkTab() {
+		return contributionsLinkTab;
+	}
+
+	public WebElement getTasksLinkTab() {
+		return tasksLinkTab;
+	}
+
+	public WebElement getCasesLinkTab() {
+		return casesLinkTab;
+	}
+
+	public WebElement getFundsLinkTab() {
+		return fundsLinkTab;
+	}
+
+	public WebElement getPurposeLinkTab() {
+		return purposeLinkTab;
+	}
+
+	public WebElement getAppealsLinkTab() {
+		return appealsLinkTab;
+	}
+
+	public WebElement getSourcesLinkTab() {
+		return sourcesLinkTab;
+	}
+
+	public WebElement getCampaignsLinkTab() {
+		return campaignsLinkTab;
+	}
+
+	public WebElement getEventsLinkTab() {
+		return eventsLinkTab;
+	}
+
+	public WebElement getExpensesLinkTab() {
+		return expensesLinkTab;
+	}
+
+	public WebElement getProgramsLinkTab() {
+		return programsLinkTab;
+	}
+
+	public WebElement getFundPartnersLinkTab() {
+		return fundPartnersLinkTab;
+	}
+
+	public WebElement getMinimizerLinkTab() {
+		return minimizerLinkTab;
+	}
 }

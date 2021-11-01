@@ -85,6 +85,99 @@ public class ContributionsHomePage extends BaseClass{
 	
 	@FindBy(xpath="(//button[.='Clear'])[2]")
 	private WebElement clearBtn2;	
+	
+	//Getters for WebElements
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+
+	public WebElement getContributionsTab() {
+		return contributionsTab;
+	}
+
+	public WebElement getScheduleTab() {
+		return scheduleTab;
+	}
+
+	public WebElement getWebcontributionsTab() {
+		return webcontributionsTab;
+	}
+
+	public WebElement getSelectCalender() {
+		return selectCalender;
+	}
+
+	public WebElement getCalenderStartDate() {
+		return calenderStartDate;
+	}
+
+	public WebElement getCalenderEndDate() {
+		return calenderEndDate;
+	}
+
+	public WebElement getAllAmount() {
+		return allAmount;
+	}
+
+	public WebElement getMinAmount() {
+		return minAmount;
+	}
+
+	public WebElement getMaxAmount() {
+		return maxAmount;
+	}
+
+	public WebElement getApplyBtn() {
+		return applyBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getSelectCalender2() {
+		return selectCalender2;
+	}
+
+	public WebElement getCalenderStartDate2() {
+		return calenderStartDate2;
+	}
+
+	public WebElement getCalenderEndDate2() {
+		return calenderEndDate2;
+	}
+
+	public WebElement getAllAmount2() {
+		return allAmount2;
+	}
+
+	public WebElement getMinAmount2() {
+		return minAmount2;
+	}
+
+	public WebElement getMaxAmount2() {
+		return maxAmount2;
+	}
+
+	public WebElement getAllCampaigns() {
+		return allCampaigns;
+	}
+
+	public WebElement getAllFunds() {
+		return allFunds;
+	}
+
+	public WebElement getAllAppeals() {
+		return allAppeals;
+	}
+
+	public WebElement getApplyBtn2() {
+		return applyBtn2;
+	}
+
+	public WebElement getClearBtn2() {
+		return clearBtn2;
+	}
 
 	public static class AddContribution{
 		public AddContribution() {
@@ -191,6 +284,139 @@ public class ContributionsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfoBtn() {
+			return selectBasicInfoBtn;
+		}
+
+		public WebElement getSelectAdditionalInfoBtn() {
+			return selectAdditionalInfoBtn;
+		}
+
+		public WebElement getSelectRecognitionBtn() {
+			return selectRecognitionBtn;
+		}
+
+		public WebElement getSelectTributeBtn() {
+			return selectTributeBtn;
+		}
+
+		public WebElement getSelectAcknowledgementBtn() {
+			return selectAcknowledgementBtn;
+		}
+
+		public WebElement getSelectPaymentInfoBtn() {
+			return selectPaymentInfoBtn;
+		}
+
+		public WebElement getSelectPerson() {
+			return selectPerson;
+		}
+
+		public WebElement getSelectType() {
+			return selectType;
+		}
+
+		public WebElement getSelectDate() {
+			return selectDate;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectAmountCAD() {
+			return selectAmountCAD;
+		}
+
+		public WebElement getSelectExchangeRateCAD() {
+			return selectExchangeRateCAD;
+		}
+
+		public WebElement getAmount() {
+			return Amount;
+		}
+
+		public WebElement getNotes() {
+			return Notes;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getFundingPartner() {
+			return fundingPartner;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSalesChannel() {
+			return salesChannel;
+		}
+
+		public WebElement getSolicitorMethod() {
+			return solicitorMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getAnonymousCheck() {
+			return anonymousCheck;
+		}
+
+		public WebElement getRecognitionName() {
+			return recognitionName;
+		}
+
+		public WebElement getSpecialType() {
+			return specialType;
+		}
+
+		public WebElement getAcknowledgementEmail() {
+			return acknowledgementEmail;
+		}
+
+		public WebElement getSendTaxReceiptCheck() {
+			return sendTaxReceiptCheck;
+		}
+
+		public WebElement getPaymentMethod() {
+			return paymentMethod;
+		}
+
+		public WebElement getIsPaidCheck() {
+			return isPaidCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	
 	}
 	
@@ -289,8 +515,128 @@ public class ContributionsHomePage extends BaseClass{
 		private WebElement isPaidCheck;
 		
 		@FindBy(xpath="//button[.='Add']")
-		private WebElement addBtn;		
+		private WebElement addBtn;
 		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfoBtn() {
+			return selectBasicInfoBtn;
+		}
+
+		public WebElement getSelectAdditionalInfoBtn() {
+			return selectAdditionalInfoBtn;
+		}
+
+		public WebElement getSelectRecognitionBtn() {
+			return selectRecognitionBtn;
+		}
+
+		public WebElement getSelectTributeBtn() {
+			return selectTributeBtn;
+		}
+
+		public WebElement getSelectPaymentInfoBtn() {
+			return selectPaymentInfoBtn;
+		}
+
+		public WebElement getSelectPerson() {
+			return selectPerson;
+		}
+
+		public WebElement getSelectType() {
+			return selectType;
+		}
+
+		public WebElement getSelectDate() {
+			return selectDate;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectAmountCAD() {
+			return selectAmountCAD;
+		}
+
+		public WebElement getSelectExchangeRateCAD() {
+			return selectExchangeRateCAD;
+		}
+
+		public WebElement getAmount() {
+			return Amount;
+		}
+
+		public WebElement getNotes() {
+			return Notes;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getFundingPartner() {
+			return fundingPartner;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSalesChannel() {
+			return salesChannel;
+		}
+
+		public WebElement getSolicitorMethod() {
+			return solicitorMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getAnonymousCheck() {
+			return anonymousCheck;
+		}
+
+		public WebElement getRecognitionName() {
+			return recognitionName;
+		}
+
+		public WebElement getSpecialType() {
+			return specialType;
+		}
+
+		public WebElement getPaymentMethod() {
+			return paymentMethod;
+		}
+
+		public WebElement getIsPaidCheck() {
+			return isPaidCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}		
 	}
 	
 }
