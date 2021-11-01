@@ -28,14 +28,8 @@ public class Expenses extends BaseClass {
    			super();
    			PageFactory.initElements(driver, this);
    		}
+   		
    		@FindBy(xpath = "//label[text()='Name:']//following-sibling::div//input")
  	    private WebElement Name;
-   		
-	
-    }
-	
+    }	
 }
-  // //input[@id='is_inactive'] for checkbox
-// //label[text()='Date:']//following-sibling::div//input - date
-
-//label[text()='Notes:']//following-sibling::div//div/div[@data-placeholder="Insert text here ..."] -- Notes

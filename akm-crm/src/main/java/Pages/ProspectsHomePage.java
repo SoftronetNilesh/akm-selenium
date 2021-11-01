@@ -78,6 +78,93 @@ public class ProspectsHomePage extends BaseClass{
 	@FindBy(xpath="//td[.='No record found']")
 	private WebElement noRecordFoundMsg;
 	
+	//Getters for WebElements
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+
+	public WebElement getProspectCount() {
+		return prospectCount;
+	}
+
+	public WebElement getAskCount() {
+		return askCount;
+	}
+
+	public WebElement getProspectByStageCount() {
+		return prospectByStageCount;
+	}
+
+
+	public WebElement getProspectByManagerCount() {
+		return prospectByManagerCount;
+	}
+
+
+	public WebElement getProspectAskBySectorCount() {
+		return prospectAskBySectorCount;
+	}
+
+	public WebElement getProspectTab() {
+		return prospectTab;
+	}
+
+	public WebElement getAskTab() {
+		return askTab;
+	}
+
+	public WebElement getSelectAllCampaigns() {
+		return selectAllCampaigns;
+	}
+
+	public WebElement getSelectAllFunds() {
+		return selectAllFunds;
+	}
+
+	public WebElement getSelectAllAppeals() {
+		return selectAllAppeals;
+	}
+
+	public WebElement getSelectAllPurposes() {
+		return selectAllPurposes;
+	}
+
+	public WebElement getSelectAllStages() {
+		return selectAllStages;
+	}
+
+	public WebElement getSelectAllSectors() {
+		return selectAllSectors;
+	}
+
+	public WebElement getSelectAllTypes() {
+		return selectAllTypes;
+	}
+
+	public WebElement getSelectAllTerritory() {
+		return selectAllTerritory;
+	}
+
+	public WebElement getSelectAllOwners() {
+		return selectAllOwners;
+	}
+
+	public WebElement getSearchConstituentsBox() {
+		return searchConstituentsBox;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
+
 	public static class addProspect{
 		public addProspect() {
 			// TODO Auto-generated constructor stub
@@ -175,6 +262,126 @@ public class ProspectsHomePage extends BaseClass{
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
 		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfo() {
+			return selectBasicInfo;
+		}
+
+		public WebElement getSelectAdditionalInfo() {
+			return selectAdditionalInfo;
+		}
+
+		public WebElement getSelectPerson() {
+			return selectPerson;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectCapacityRating() {
+			return selectCapacityRating;
+		}
+
+		public WebElement getSelectAssetAmount() {
+			return selectAssetAmount;
+		}
+
+		public WebElement getAssetNote() {
+			return assetNote;
+		}
+
+		public WebElement getRealEstateAmount() {
+			return realEstateAmount;
+		}
+
+		public WebElement getPotentialMinAmount() {
+			return potentialMinAmount;
+		}
+
+		public WebElement getPotentialMaxAmount() {
+			return potentialMaxAmount;
+		}
+
+		public WebElement getPotentialNote() {
+			return potentialNote;
+		}
+
+		public WebElement getHhIncome() {
+			return hhIncome;
+		}
+
+		public WebElement getLevel() {
+			return level;
+		}
+
+		public WebElement getRating() {
+			return rating;
+		}
+
+		public WebElement getProspectManager() {
+			return prospectManager;
+		}
+
+		public WebElement getTargetAmount() {
+			return targetAmount;
+		}
+
+		public WebElement getTargetPeriodInYear() {
+			return targetPeriodInYear;
+		}
+
+		public WebElement getProspectStage() {
+			return prospectStage;
+		}
+
+		public WebElement getPriority() {
+			return priority;
+		}
+
+		public WebElement getFundingInterests() {
+			return fundingInterests;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSourceMethod() {
+			return sourceMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 	
 	
@@ -308,6 +515,170 @@ public class ProspectsHomePage extends BaseClass{
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
 		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfo() {
+			return selectBasicInfo;
+		}
+
+		public WebElement getSelectAdditionalInfo() {
+			return selectAdditionalInfo;
+		}
+
+		public WebElement getSelectClearance() {
+			return selectClearance;
+		}
+
+		public WebElement getPersonOrOrganizationName() {
+			return personOrOrganizationName;
+		}
+
+		public WebElement getConnector() {
+			return connector;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectStage() {
+			return selectStage;
+		}
+
+		public WebElement getSelectSector() {
+			return selectSector;
+		}
+
+		public WebElement getSelectPriority() {
+			return selectPriority;
+		}
+
+		public WebElement getSelectType() {
+			return selectType;
+		}
+
+		public WebElement getAskAmount() {
+			return askAmount;
+		}
+
+		public WebElement getCommitedAmount() {
+			return commitedAmount;
+		}
+
+		public WebElement getExpectedQ1Amount() {
+			return expectedQ1Amount;
+		}
+
+		public WebElement getExpectedQ2Amount() {
+			return expectedQ2Amount;
+		}
+
+		public WebElement getExpectedQ3Amount() {
+			return expectedQ3Amount;
+		}
+
+		public WebElement getExpectedQ4Amount() {
+			return expectedQ4Amount;
+		}
+
+		public WebElement getFiscalYear1() {
+			return fiscalYear1;
+		}
+
+		public WebElement getFiscalYear2() {
+			return fiscalYear2;
+		}
+
+		public WebElement getFiscalYear3() {
+			return fiscalYear3;
+		}
+
+		public WebElement getFiscalYear4() {
+			return fiscalYear4;
+		}
+
+		public WebElement getFiscalYearQuarter1() {
+			return fiscalYearQuarter1;
+		}
+
+		public WebElement getFiscalYearQuarter2() {
+			return fiscalYearQuarter2;
+		}
+
+		public WebElement getFiscalYearQuarter3() {
+			return fiscalYearQuarter3;
+		}
+
+		public WebElement getFiscalYearQuarter4() {
+			return fiscalYearQuarter4;
+		}
+
+		public WebElement getAlignment() {
+			return alignment;
+		}
+
+		public WebElement getProbability() {
+			return probability;
+		}
+
+		public WebElement getPrimaryOwner() {
+			return primaryOwner;
+		}
+
+		public WebElement getSecondaryOwner() {
+			return secondaryOwner;
+		}
+
+		public WebElement getClearance() {
+			return clearance;
+		}
+
+		public WebElement getRequiredCheck() {
+			return requiredCheck;
+		}
+
+		public WebElement getReceivedCheck() {
+			return receivedCheck;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSourceMethod() {
+			return sourceMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 	
 }

@@ -25,6 +25,23 @@ public class CaseHomePage extends BaseClass{
 	@FindBy(xpath="//button[.='Add']")
 	private WebElement addBtn;
 	
+	//Getters for WebElements
+	public WebElement getSearchCategory() {
+		return searchCategory;
+	}
+
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
 	public static class AddCases{
 		public AddCases() {
 			// TODO Auto-generated constructor stub
@@ -55,6 +72,39 @@ public class CaseHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getSelectConstituent() {
+			return selectConstituent;
+		}
+
+		public WebElement getSelectCategory() {
+			return selectCategory;
+		}
+
+		public WebElement getSelectSubCategory() {
+			return selectSubCategory;
+		}
+
+		public WebElement getSelectContactMethod() {
+			return selectContactMethod;
+		}
+
+		public WebElement getSelectPriority() {
+			return selectPriority;
+		}
+
+		public WebElement getSelectSeverity() {
+			return selectSeverity;
+		}
+
+		public WebElement getSubjectText() {
+			return subjectText;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}		
 		
 	}
 	

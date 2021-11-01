@@ -50,5 +50,58 @@ public class DashboardHomePage extends BaseClass {
 	private WebElement selectAllMembershipPrograms;
 	
 	@FindBy(xpath="//option[text()='Select Membership Levels']']")
-	private WebElement selectMembershipLevels;	
+	private WebElement selectMembershipLevels;
+	
+	//Getters for WebElements
+	public WebElement getMembershipTab() {
+		return membershipTab;
+	}
+
+	public WebElement getContributionTab() {
+		return contributionTab;
+	}
+
+	public WebElement getDonorTab() {
+		return donorTab;
+	}
+
+	public WebElement getCalenderFilter() {
+		return calenderFilter;
+	}
+
+	public WebElement getSelectFromDate() {
+		return selectFromDate;
+	}
+
+	public WebElement getSelectToDate() {
+		return selectToDate;
+	}
+
+	public WebElement getApplyBtn() {
+		return applyBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getSelectAllRegion() {
+		return selectAllRegion;
+	}
+
+	public WebElement getSelectAllCountries() {
+		return selectAllCountries;
+	}
+
+	public WebElement getSelectAllStates() {
+		return selectAllStates;
+	}
+
+	public WebElement getSelectAllMembershipPrograms() {
+		return selectAllMembershipPrograms;
+	}
+
+	public WebElement getSelectMembershipLevels() {
+		return selectMembershipLevels;
+	}	
 }

@@ -80,6 +80,95 @@ public class TasksHomePage extends BaseClass{
 	@FindBy(xpath="//tr/td[text()='No data found']")
 	private WebElement noDataFoundMsg;
 	
+	//Getters for WebElements
+	public WebElement getTasksTab() {
+		return tasksTab;
+	}
+
+	public WebElement getActivityTab() {
+		return activityTab;
+	}
+
+	public WebElement getSelectAllUsers() {
+		return selectAllUsers;
+	}
+
+	public WebElement getSelectAllStatus() {
+		return selectAllStatus;
+	}
+
+	public WebElement getSelectAllRelatedItems() {
+		return selectAllRelatedItems;
+	}
+
+	public WebElement getSearchConstituentsBox() {
+		return searchConstituentsBox;
+	}
+
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
+	public WebElement getTableViewBtn() {
+		return tableViewBtn;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
+
+	public WebElement getSelectTodayBtn() {
+		return selectTodayBtn;
+	}
+
+	public WebElement getSelectMonthBtn() {
+		return selectMonthBtn;
+	}
+
+	public WebElement getSelectWeekBtn() {
+		return selectWeekBtn;
+	}
+
+	public WebElement getSelectPrevious() {
+		return selectPrevious;
+	}
+
+	public WebElement getSelectNext() {
+		return selectNext;
+	}
+
+	public WebElement getSelectAllItems() {
+		return selectAllItems;
+	}
+
+	public WebElement getSelectAllIType() {
+		return selectAllIType;
+	}
+
+	public WebElement getSelectAllDirection() {
+		return selectAllDirection;
+	}
+
+	public WebElement getSearchSubjectMsg() {
+		return searchSubjectMsg;
+	}
+
+	public WebElement getResetBtn() {
+		return resetBtn;
+	}
+
+	public WebElement getNoDataFoundMsg() {
+		return noDataFoundMsg;
+	}
+
 	public static class AddTask{
 		public AddTask() {
 			// TODO Auto-generated constructor stub
@@ -117,6 +206,46 @@ public class TasksHomePage extends BaseClass{
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
 		
+		//Getters for WebElements
+		public WebElement getSubject() {
+			return subject;
+		}
+
+		public WebElement getDescription() {
+			return description;
+		}
+
+		public WebElement getSelectCalender() {
+			return selectCalender;
+		}
+
+		public WebElement getSelectCreater() {
+			return selectCreater;
+		}
+
+		public WebElement getSelectAssignedTo() {
+			return selectAssignedTo;
+		}
+
+		public WebElement getSelectStatus() {
+			return selectStatus;
+		}
+
+		public WebElement getSelectConstituent() {
+			return selectConstituent;
+		}
+
+		public WebElement getSelectRelatedTo() {
+			return selectRelatedTo;
+		}
+
+		public WebElement getNotes() {
+			return notes;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 	
 }

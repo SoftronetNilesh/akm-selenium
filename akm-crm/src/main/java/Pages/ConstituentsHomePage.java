@@ -3,7 +3,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import Base.BaseClass;
-
 public class ConstituentsHomePage extends BaseClass{
 	
 	
@@ -45,16 +44,52 @@ public class ConstituentsHomePage extends BaseClass{
 	
 	@FindBy(xpath="//button[normalize-space()='Add']")
 	private WebElement addHouseholdBtn;
-
 	@FindBy(xpath="//button[normalize-space()='Export']")
 	private WebElement exportBtn;
 	
 	@FindBy(xpath="//td[@class=\"min-td-width-display\"]")
 	private WebElement editFirstHouseHoldRecord;
 	
-	
-	
-	
+	//Getters for WebElements	
+	public WebElement getConstituentsLinkTab() {
+		return constituentsLinkTab;
+	}
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+	public WebElement getConstituentTab() {
+		return constituentTab;
+	}
+	public WebElement getHouseholdTab() {
+		return householdTab;
+	}
+	public WebElement getSelectAllRegion() {
+		return selectAllRegion;
+	}
+	public WebElement getSelectAllCountries() {
+		return selectAllCountries;
+	}
+	public WebElement getSelectAllStates() {
+		return selectAllStates;
+	}
+	public WebElement getSelectAllTerritory() {
+		return selectAllTerritory;
+	}
+	public WebElement getSpeedSearch() {
+		return speedSearch;
+	}
+	public WebElement getClearFilterBtn() {
+		return clearFilterBtn;
+	}
+	public WebElement getAddHouseholdBtn() {
+		return addHouseholdBtn;
+	}
+	public WebElement getExportBtn() {
+		return exportBtn;
+	}
+	public WebElement getEditFirstHouseHoldRecord() {
+		return editFirstHouseHoldRecord;
+	}
 	public static class addConstituents{
 		
 		
@@ -105,7 +140,6 @@ public class ConstituentsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//*[@name='mobile_phone']")
 		private WebElement mobilePhone;
-
 		@FindBy(xpath="//*[@name='work_phone']")
 		private WebElement workPhone;
 		
@@ -117,7 +151,6 @@ public class ConstituentsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//label[text()='Street1:']//following-sibling::div/input")
 		private WebElement street1;
-
 		@FindBy(xpath="//label[text()='Street2:']//following-sibling::div/input")
 		private WebElement street2;
 		
@@ -129,7 +162,6 @@ public class ConstituentsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//label[text()='ZIP/Potal Code:']//following-sibling::div/input")
 		private WebElement zipCode;
-
 		@FindBy(xpath="//label[text()='Region']/following::select[1]")
 		private WebElement selectRegion;
 		
@@ -146,6 +178,88 @@ public class ConstituentsHomePage extends BaseClass{
 		@FindBy(xpath="//button[text()='Add']")
 		private WebElement addConstituencyBtn;
 		
+		//Getters for WebElements
+		public WebElement getSelectConstituentType() {
+			return selectConstituentType;
+		}
+		public WebElement getPrefix() {
+			return prefix;
+		}
+		public WebElement getLastName() {
+			return lastName;
+		}
+		public WebElement getMiddleName() {
+			return middleName;
+		}
+		public WebElement getFirstName() {
+			return firstName;
+		}
+		public WebElement getSuffix() {
+			return suffix;
+		}
+		public WebElement getDisplayName() {
+			return displayName;
+		}
+		public WebElement getSalutation() {
+			return salutation;
+		}
+		public WebElement getFamilySalutation() {
+			return familySalutation;
+		}
+		public WebElement getHomePhoneCountryCode() {
+			return homePhoneCountryCode;
+		}
+		public WebElement getMobilePhoneCountryCode() {
+			return mobilePhoneCountryCode;
+		}
+		public WebElement getWorkPhoneCountryCode() {
+			return workPhoneCountryCode;
+		}
+		public WebElement getHomePhone() {
+			return homePhone;
+		}
+		public WebElement getMobilePhone() {
+			return mobilePhone;
+		}
+		public WebElement getWorkPhone() {
+			return workPhone;
+		}
+		public WebElement getEmail() {
+			return email;
+		}
+		public WebElement getWorkEmail() {
+			return workEmail;
+		}
+		public WebElement getStreet1() {
+			return street1;
+		}
+		public WebElement getStreet2() {
+			return street2;
+		}
+		public WebElement getStreet3() {
+			return street3;
+		}
+		public WebElement getCity() {
+			return city;
+		}
+		public WebElement getZipCode() {
+			return zipCode;
+		}
+		public WebElement getSelectRegion() {
+			return selectRegion;
+		}
+		public WebElement getSelectCountry() {
+			return selectCountry;
+		}
+		public WebElement getSelectState() {
+			return selectState;
+		}
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+		public WebElement getAddConstituencyBtn() {
+			return addConstituencyBtn;
+		}	
 		
 	}
 	
@@ -234,9 +348,110 @@ public class ConstituentsHomePage extends BaseClass{
 		@FindBy(xpath="//button[text()='Send SMS']")
 		private WebElement sendSMS;
 		
-		
-		
-		
+		//Getters for WebElements
+		public WebElement getEditProfileImage() {
+			return editProfileImage;
+		}
+
+		public WebElement getEditPersonalInfo() {
+			return editPersonalInfo;
+		}
+
+		public WebElement getEditDonorWall() {
+			return editDonorWall;
+		}
+
+		public WebElement getAddPledge() {
+			return addPledge;
+		}
+
+		public WebElement getAddMembership() {
+			return addMembership;
+		}
+
+		public WebElement getAddContribution() {
+			return addContribution;
+		}
+
+		public WebElement getAddRelationship() {
+			return addRelationship;
+		}
+
+		public WebElement getEdithouseHold() {
+			return edithouseHold;
+		}
+
+		public WebElement getAddLabels() {
+			return addLabels;
+		}
+
+		public WebElement getAddEmails() {
+			return addEmails;
+		}
+
+		public WebElement getAddPhones() {
+			return addPhones;
+		}
+
+		public WebElement getAddAddress() {
+			return addAddress;
+		}
+
+		public WebElement getAddConstituencies() {
+			return addConstituencies;
+		}
+
+		public WebElement getUploadDocumentBtn() {
+			return uploadDocumentBtn;
+		}
+
+		public WebElement getAddNotes() {
+			return addNotes;
+		}
+
+		public WebElement getAddAdditionalInfo() {
+			return addAdditionalInfo;
+		}
+
+		public WebElement getEditMarketing() {
+			return editMarketing;
+		}
+
+		public WebElement getAddSocialMediaBtn() {
+			return addSocialMediaBtn;
+		}
+
+		public WebElement getUploadPhotosBtn() {
+			return uploadPhotosBtn;
+		}
+
+		public WebElement getTaskActivitiesSideBtn() {
+			return taskActivitiesSideBtn;
+		}
+
+		public WebElement getChangeHistorySideBtn() {
+			return changeHistorySideBtn;
+		}
+
+		public WebElement getNotesSideBtn() {
+			return notesSideBtn;
+		}
+
+		public WebElement getAddTask() {
+			return addTask;
+		}
+
+		public WebElement getAddActivity() {
+			return addActivity;
+		}
+
+		public WebElement getSendEmail() {
+			return sendEmail;
+		}
+
+		public WebElement getSendSMS() {
+			return sendSMS;
+		}
 	}
 	
 	public static class addHousehold{
@@ -264,7 +479,31 @@ public class ConstituentsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[text()='Add']")
 		private WebElement addHouseHoldBtn;
-		
+
+		//Getters for WebElements
+		public WebElement getHouseHoldName() {
+			return houseHoldName;
+		}
+
+		public WebElement getSalutationName() {
+			return salutationName;
+		}
+
+		public WebElement getSelectRegion() {
+			return selectRegion;
+		}
+
+		public WebElement getSelectCountry() {
+			return selectCountry;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getAddHouseHoldBtn() {
+			return addHouseHoldBtn;
+		}
 		
 	}
 	

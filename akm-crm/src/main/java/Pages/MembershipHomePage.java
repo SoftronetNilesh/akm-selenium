@@ -106,6 +106,131 @@ public class MembershipHomePage extends BaseClass {
 	@FindBy(xpath="//td[.='No record found']")
 	private WebElement noRecordFoundMsg;
 	
+	//Getters for WebElements
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+
+	public WebElement getMembershipTab() {
+		return membershipTab;
+	}
+
+	public WebElement getRevenueTab() {
+		return revenueTab;
+	}
+
+	public WebElement getLifetimeMembershipCount() {
+		return lifetimeMembershipCount;
+	}
+
+	public WebElement getActiveMemberships() {
+		return activeMemberships;
+	}
+
+	public WebElement getExpThisMonthCount() {
+		return expThisMonthCount;
+	}
+
+	public WebElement getRenewedThisMonthCount() {
+		return renewedThisMonthCount;
+	}
+
+	public WebElement getDropThisMonthCount() {
+		return dropThisMonthCount;
+	}
+
+	public WebElement getActiveCheck() {
+		return activeCheck;
+	}
+
+	public WebElement getNewCheck() {
+		return newCheck;
+	}
+
+	public WebElement getRenewalCheck() {
+		return renewalCheck;
+	}
+
+	public WebElement getReinstatedCheck() {
+		return reinstatedCheck;
+	}
+
+	public WebElement getCalenderSelect() {
+		return calenderSelect;
+	}
+
+	public WebElement getCalenderStartDate() {
+		return calenderStartDate;
+	}
+
+	public WebElement getCalenderEndDate() {
+		return calenderEndDate;
+	}
+
+	public WebElement getSelectAllMembershipProgram() {
+		return selectAllMembershipProgram;
+	}
+
+	public WebElement getSelectAllMembershipLevels() {
+		return selectAllMembershipLevels;
+	}
+
+	public WebElement getSelectAllCampaigns() {
+		return selectAllCampaigns;
+	}
+
+	public WebElement getSelectAllAppeals() {
+		return selectAllAppeals;
+	}
+
+	public WebElement getSelectAllFunds() {
+		return selectAllFunds;
+	}
+
+	public WebElement getSelectAllPurposes() {
+		return selectAllPurposes;
+	}
+
+	public WebElement getSelectAllTerritory() {
+		return selectAllTerritory;
+	}
+
+	public WebElement getSelectRegions() {
+		return selectRegions;
+	}
+
+	public WebElement getSelectAllCountries() {
+		return selectAllCountries;
+	}
+
+	public WebElement getSelectAllStates() {
+		return selectAllStates;
+	}
+
+	public WebElement getSearchConstituentsBox() {
+		return searchConstituentsBox;
+	}
+
+	public WebElement getApplyBtn() {
+		return applyBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
+	public WebElement getExportBtn() {
+		return exportBtn;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
+
 	public static class AddMembership{
 		public AddMembership() {
 			// TODO Auto-generated constructor stub
@@ -208,6 +333,135 @@ public class MembershipHomePage extends BaseClass {
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfo() {
+			return selectBasicInfo;
+		}
+
+		public WebElement getSelectImpDates() {
+			return selectImpDates;
+		}
+
+		public WebElement getSelectGivenBy() {
+			return selectGivenBy;
+		}
+
+		public WebElement getSelectBenifitsUsedBy() {
+			return selectBenifitsUsedBy;
+		}
+
+		public WebElement getSelectAdditionalInfo() {
+			return selectAdditionalInfo;
+		}
+
+		public WebElement getSelectPaymentInfo() {
+			return selectPaymentInfo;
+		}
+
+		public WebElement getSelectPerson() {
+			return selectPerson;
+		}
+
+		public WebElement getSelectProgram() {
+			return selectProgram;
+		}
+
+		public WebElement getSelectLevel() {
+			return selectLevel;
+		}
+
+		public WebElement getSelectAmountCAD() {
+			return selectAmountCAD;
+		}
+
+		public WebElement getSelectExchangeRateCAD() {
+			return selectExchangeRateCAD;
+		}
+
+		public WebElement getSelectAmount() {
+			return selectAmount;
+		}
+
+		public WebElement getSelectStatus() {
+			return selectStatus;
+		}
+
+		public WebElement getSelectInceptionDate() {
+			return selectInceptionDate;
+		}
+
+		public WebElement getSelectStartDate() {
+			return selectStartDate;
+		}
+
+		public WebElement getSelectExpDate() {
+			return selectExpDate;
+		}
+
+		public WebElement getSelectRenewalDate() {
+			return selectRenewalDate;
+		}
+
+		public WebElement getSelectLapseDate() {
+			return selectLapseDate;
+		}
+
+		public WebElement getSelectBenefactor() {
+			return selectBenefactor;
+		}
+
+		public WebElement getBenefitsDeclinedCheck() {
+			return benefitsDeclinedCheck;
+		}
+
+		public WebElement getSelectBeneficiary() {
+			return selectBeneficiary;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSourceMethod() {
+			return sourceMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getPaymentMethod() {
+			return paymentMethod;
+		}
+
+		public WebElement getIsPaidCheck() {
+			return isPaidCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 	
 }

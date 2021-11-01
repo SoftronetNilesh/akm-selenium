@@ -49,6 +49,55 @@ public class ReportsHomePage extends BaseClass{
 	@FindBy(xpath="//a[text()='Advanced Filter']")
 	private WebElement advancedFilterLink;
 	
+	//Getters for WebElements
+	public WebElement getStandardReportTab() {
+		return standardReportTab;
+	}
+
+	public WebElement getKeyMetricsDonorViewBtn() {
+		return keyMetricsDonorViewBtn;
+	}
+
+	public WebElement getQuarterlyReportMembersViewBtn() {
+		return quarterlyReportMembersViewBtn;
+	}
+
+	public WebElement getQuarterlyReportSingleMemberViewBtn() {
+		return quarterlyReportSingleMemberViewBtn;
+	}
+
+	public WebElement getComprehensiveDonorRevenueViewBtn() {
+		return comprehensiveDonorRevenueViewBtn;
+	}
+
+	public WebElement getQuarterlyReportViewBtn() {
+		return quarterlyReportViewBtn;
+	}
+
+	public WebElement getConstituentTab() {
+		return constituentTab;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
+
+	public WebElement getContributionTab() {
+		return contributionTab;
+	}
+
+	public WebElement getSaveCurrentFilterLink() {
+		return saveCurrentFilterLink;
+	}
+
+	public WebElement getSavedFiltersLink() {
+		return savedFiltersLink;
+	}
+
+	public WebElement getAdvancedFilterLink() {
+		return advancedFilterLink;
+	}
+
 	public static class SaveCurrentFilter{
 		
 		public SaveCurrentFilter(){
@@ -70,6 +119,27 @@ public class ReportsHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[text()='Cancel']")
 		private WebElement cancelBtn;
+		
+		//Getters for WebElements
+		public WebElement getSearchName() {
+			return searchName;
+		}
+
+		public WebElement getSearchDesc() {
+			return searchDesc;
+		}
+
+		public WebElement getSearchAllCheck() {
+			return searchAllCheck;
+		}
+
+		public WebElement getSaveBtn() {
+			return saveBtn;
+		}
+
+		public WebElement getCancelBtn() {
+			return cancelBtn;
+		}
 	}
 	
 	public static class SavedFilters{
@@ -77,6 +147,21 @@ public class ReportsHomePage extends BaseClass{
 		public SavedFilters(){
 			super();
 			PageFactory.initElements(driver, this);
+		}
+		
+		@FindBy(xpath="//button[.='Cancel']")
+		private WebElement cancelBtn;
+		
+		@FindBy(xpath="//button[.='Search']")
+		private WebElement searchBtn;
+		
+		//Getters for WebElements
+		public WebElement getCancelBtn() {
+			return cancelBtn;
+		}
+
+		public WebElement getSearchBtn() {
+			return searchBtn;
 		}
 	}
 	
@@ -130,7 +215,67 @@ public class ReportsHomePage extends BaseClass{
 		
 		@FindBy(id="geography")
 		private WebElement geographyCheck;
+		
+		//Getters for WebElements
+		public WebElement getContributedDateCheck() {
+			return contributedDateCheck;
+		}
 
+		public WebElement getCalenderFilter() {
+			return calenderFilter;
+		}
+
+		public WebElement getSelectFromDate() {
+			return selectFromDate;
+		}
+
+		public WebElement getSelectToDate() {
+			return selectToDate;
+		}
+
+		public WebElement getContributedAmountCheck() {
+			return contributedAmountCheck;
+		}
+
+		public WebElement getMinAmount() {
+			return minAmount;
+		}
+
+		public WebElement getMaxAmount() {
+			return maxAmount;
+		}
+
+		public WebElement getAllCampaignDrp() {
+			return allCampaignDrp;
+		}
+
+		public WebElement getAllFundsDrp() {
+			return allFundsDrp;
+		}
+
+		public WebElement getAllAppealsDrp() {
+			return allAppealsDrp;
+		}
+
+		public WebElement getAllEventsDrp() {
+			return allEventsDrp;
+		}
+
+		public WebElement getAllPurposeDrp() {
+			return allPurposeDrp;
+		}
+
+		public WebElement getSearchBtn() {
+			return searchBtn;
+		}
+
+		public WebElement getCancelBtn() {
+			return cancelBtn;
+		}
+
+		public WebElement getGeographyCheck() {
+			return geographyCheck;
+		}
 	}
 	
 }

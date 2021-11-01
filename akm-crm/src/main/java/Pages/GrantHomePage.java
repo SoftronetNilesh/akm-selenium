@@ -53,6 +53,59 @@ public class GrantHomePage extends BaseClass {
 	@FindBy(xpath="//td[.='No record found']")
 	private WebElement noRecordFoundMsg;
 	
+	//Getters for WebElements
+	public WebElement getDashboardTab() {
+		return dashboardTab;
+	}
+
+	public WebElement getGrantTab() {
+		return grantTab;
+	}
+
+	public WebElement getTotalGrant() {
+		return totalGrant;
+	}
+
+	public WebElement getTotalByStage() {
+		return totalByStage;
+	}
+
+	public WebElement getTotalByGrantOwner() {
+		return totalByGrantOwner;
+	}
+
+	public WebElement getSelectAllCampaigns() {
+		return selectAllCampaigns;
+	}
+
+	public WebElement getSelectAllFunds() {
+		return selectAllFunds;
+	}
+
+	public WebElement getSelectAllAppeals() {
+		return selectAllAppeals;
+	}
+
+	public WebElement getSelectAllPurposes() {
+		return selectAllPurposes;
+	}
+
+	public WebElement getSearchConstituentsBox() {
+		return searchConstituentsBox;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
+
 	public static class addGrant{
 		public addGrant() {
 			// TODO Auto-generated constructor stub
@@ -137,6 +190,111 @@ public class GrantHomePage extends BaseClass {
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfo() {
+			return selectBasicInfo;
+		}
+
+		public WebElement getSelectAdditionalInfo() {
+			return selectAdditionalInfo;
+		}
+
+		public WebElement getPersonOrOrganizationName() {
+			return personOrOrganizationName;
+		}
+
+		public WebElement getConnector() {
+			return connector;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectProposalStartDate() {
+			return selectProposalStartDate;
+		}
+
+		public WebElement getSelectProposalDueDate() {
+			return selectProposalDueDate;
+		}
+
+		public WebElement getSelectProposalSubmittedDate() {
+			return selectProposalSubmittedDate;
+		}
+
+		public WebElement getGrantApprovedDate() {
+			return grantApprovedDate;
+		}
+
+		public WebElement getGrantApprovedAmount() {
+			return grantApprovedAmount;
+		}
+
+		public WebElement getSelectStage() {
+			return selectStage;
+		}
+
+		public WebElement getSelectType() {
+			return selectType;
+		}
+
+		public WebElement getAlignment() {
+			return alignment;
+		}
+
+		public WebElement getProbability() {
+			return probability;
+		}
+
+		public WebElement getPrimaryOwner() {
+			return primaryOwner;
+		}
+
+		public WebElement getSecondaryOwner() {
+			return secondaryOwner;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSourceMethod() {
+			return sourceMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 	
 }

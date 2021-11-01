@@ -87,6 +87,107 @@ public class PledgeHomePage extends BaseClass{
 	
 	@FindBy(xpath="//td[.='No record found']")
 	private WebElement noRecordFoundMsg;
+	
+	//Getters for WebElements
+	public WebElement getCalenderSelect() {
+		return calenderSelect;
+	}
+
+	public WebElement getCalenderSelectFilter() {
+		return calenderSelectFilter;
+	}
+
+	public WebElement getCalenderStartDate() {
+		return calenderStartDate;
+	}
+
+	public WebElement getCalenderEndDate() {
+		return calenderEndDate;
+	}
+
+	public WebElement getSelectAllMembershipProgram() {
+		return selectAllMembershipProgram;
+	}
+
+	public WebElement getSelectAllCampaigns() {
+		return selectAllCampaigns;
+	}
+
+	public WebElement getSelectAmountType() {
+		return selectAmountType;
+	}
+
+	public WebElement getSelectAllAmount() {
+		return selectAllAmount;
+	}
+
+	public WebElement getSelectMinAmount() {
+		return selectMinAmount;
+	}
+
+	public WebElement getSelectMaxAmount() {
+		return selectMaxAmount;
+	}
+
+	public WebElement getSelectAllAppeals() {
+		return selectAllAppeals;
+	}
+
+	public WebElement getSelectAllFunds() {
+		return selectAllFunds;
+	}
+
+	public WebElement getSelectAllPurposes() {
+		return selectAllPurposes;
+	}
+
+	public WebElement getSelectAllTerritory() {
+		return selectAllTerritory;
+	}
+
+	public WebElement getSelectRegions() {
+		return selectRegions;
+	}
+
+	public WebElement getSelectAllCountries() {
+		return selectAllCountries;
+	}
+
+	public WebElement getSelectAllStates() {
+		return selectAllStates;
+	}
+
+	public WebElement getSelectAll() {
+		return selectAll;
+	}
+
+	public WebElement getSearchConstituentsBox() {
+		return searchConstituentsBox;
+	}
+
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+
+	public WebElement getApplyBtn() {
+		return applyBtn;
+	}
+
+	public WebElement getClearBtn() {
+		return clearBtn;
+	}
+
+	public WebElement getAddBtn() {
+		return addBtn;
+	}
+
+	public WebElement getExportBtn() {
+		return exportBtn;
+	}
+
+	public WebElement getNoRecordFoundMsg() {
+		return noRecordFoundMsg;
+	}
 
 	public static class addPledge{
 		
@@ -182,6 +283,122 @@ public class PledgeHomePage extends BaseClass{
 		
 		@FindBy(xpath="//button[.='Add']")
 		private WebElement addBtn;
+		
+		//Getters for WebElements
+		public WebElement getSelectBasicInfoBtn() {
+			return selectBasicInfoBtn;
+		}
 
+		public WebElement getSelectBenifitsUsedByBtn() {
+			return selectBenifitsUsedByBtn;
+		}
+
+		public WebElement getSelectAdditionalInfoBtn() {
+			return selectAdditionalInfoBtn;
+		}
+
+		public WebElement getSelectPaymentInfoBtn() {
+			return selectPaymentInfoBtn;
+		}
+
+		public WebElement getSelectPerson() {
+			return selectPerson;
+		}
+
+		public WebElement getSelectType() {
+			return selectType;
+		}
+
+		public WebElement getSelectNoOfYears() {
+			return selectNoOfYears;
+		}
+
+		public WebElement getCommitedOnDate() {
+			return commitedOnDate;
+		}
+
+		public WebElement getSelectTerritory() {
+			return selectTerritory;
+		}
+
+		public WebElement getSelectCurrency() {
+			return selectCurrency;
+		}
+
+		public WebElement getSelectAmountCAD() {
+			return selectAmountCAD;
+		}
+
+		public WebElement getSelectExchangeRateCAD() {
+			return selectExchangeRateCAD;
+		}
+
+		public WebElement getSelectCommitedAmount() {
+			return selectCommitedAmount;
+		}
+
+		public WebElement getBenefitsDeclinedCheck() {
+			return benefitsDeclinedCheck;
+		}
+
+		public WebElement getSelectBeneficiary() {
+			return selectBeneficiary;
+		}
+
+		public WebElement getCampaign() {
+			return campaign;
+		}
+
+		public WebElement getEvent() {
+			return event;
+		}
+
+		public WebElement getFund() {
+			return fund;
+		}
+
+		public WebElement getAppeal() {
+			return appeal;
+		}
+
+		public WebElement getRestrictedFund() {
+			return restrictedFund;
+		}
+
+		public WebElement getPurpose() {
+			return purpose;
+		}
+
+		public WebElement getCategory() {
+			return category;
+		}
+
+		public WebElement getStatus() {
+			return status;
+		}
+
+		public WebElement getSource() {
+			return source;
+		}
+
+		public WebElement getSolicitorMethod() {
+			return solicitorMethod;
+		}
+
+		public WebElement getSolicitor() {
+			return solicitor;
+		}
+
+		public WebElement getPaymentMethod() {
+			return paymentMethod;
+		}
+
+		public WebElement getIsPaidCheck() {
+			return isPaidCheck;
+		}
+
+		public WebElement getAddBtn() {
+			return addBtn;
+		}
 	}
 }
