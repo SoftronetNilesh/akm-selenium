@@ -66,13 +66,41 @@ import Pages.LoginPage;
 			addFundPartner.getAddFundingPartnerSubmitButton().click();
 			Assert.assertEquals(fundingPartnersHomePage.verifyFundingPartnerName("Test"), true);
 			wait.until(ExpectedConditions.visibilityOf(editFundingPartnerHome.getEditFundingPartnerBtn()));
-			editFundingPartnerHome.getEditFundingPartnerBtn().click();
+			Thread.sleep(5000);
+
 			Assert.assertEquals((editFundingPartnerHome.getName().getText().trim().split(": "))[1], "Test");
 			Assert.assertEquals((editFundingPartnerHome.getContact().getText().trim().split(": "))[1], "Test Name");
 			Assert.assertEquals((editFundingPartnerHome.getPhone().getText().trim().split(": "))[1], "+9172636823682");
 			Assert.assertEquals((editFundingPartnerHome.getEmail().getText().trim().split(": "))[1], "test@test.com");
+			
 		}
-
+		
+		@Test(dependsOnMethods = "addNewFundPartner" )
+		public void editNewFundPartner() throws InterruptedException {
+			
+			Assert.assertEquals(fundingPartnersHomePage.verifyFundingPartnerName("Test"), true);
+			editFundingPartnerHome.getDetailsTab().click();
+			editFundingPartnerHome.getEditFundingPartnerBtn().click();
+			Thread.sleep(10000);
+			editFundingPartner.getEditName().clear();
+			editFundingPartner.getEditName().sendKeys("Test Name Updated");
+			editFundingPartner.getEditContactName().clear();
+			editFundingPartner.getEditContactName().sendKeys("Test Contact updated");
+			editFundingPartner.getEditPhone().clear();
+			editFundingPartner.getEditPhone().sendKeys("+9100000000");
+			editFundingPartner.getEditEmail().clear();
+			editFundingPartner.getEditEmail().sendKeys("testupdate@test.com");
+			editFundingPartner.getEditNotes().sendKeys("Updated record");
+			editFundingPartner.getUpdateFundPartnerBtn().click();
+			Thread.sleep(5000);
+			editFundingPartnerHome.getDetailsTab().click();
+			Assert.assertEquals((editFundingPartnerHome.getName().getText().trim().split(": "))[1], "Test Name Updated");
+			Assert.assertEquals((editFundingPartnerHome.getContact().getText().trim().split(": "))[1], "Test Contact updated");
+			Assert.assertEquals((editFundingPartnerHome.getPhone().getText().trim().split(": "))[1], "+9100000000");
+			Assert.assertEquals((editFundingPartnerHome.getEmail().getText().trim().split(": "))[1], "testupdate@test.com");		
+		}
+		
+		
 		@AfterMethod
 		public void tearDown(ITestResult result) {
 			driver.quit();

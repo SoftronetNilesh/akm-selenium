@@ -58,17 +58,15 @@ public class FundingPartnersHomePage extends BaseClass {
 		
 		for (WebElement webElement : getFundingPartnerNames) {
 			
-			if(webElement.getText().trim().equals(fundingPartnerName))
-			{
-				webElement.click();
+			String actFundingPartnerName = webElement.getText().trim();
+			if(actFundingPartnerName.equals(fundingPartnerName))
+			{	
 				isAvailable=true;
+				webElement.click();
 				break;
-			}
-			
+			}	
 		}
-		
-		return isAvailable;
-		
+		return isAvailable;	
 	}
 	
 
@@ -165,16 +163,16 @@ public class FundingPartnersHomePage extends BaseClass {
 		@FindBy(xpath = "//button[.=' Add']")
 		private WebElement addPartnerCampaignButton;
 
-		@FindBy(css = "p:nth-child(2)")
+		@FindBy(xpath = "//a[@id='detailsTab']//following::p[1]")
 		private WebElement name;
 		
-		@FindBy(css = "td:nth-child(3)")
+		@FindBy(xpath = "//a[@id='detailsTab']//following::p[2]")
 		private WebElement contact;
 		
-		@FindBy(css = "td:nth-child(4)")
+		@FindBy(xpath = "//a[@id='detailsTab']//following::p[3]")
 		private WebElement phone;
 		
-		@FindBy(css = "td:nth-child(5)")
+		@FindBy(xpath = "//a[@id='detailsTab']//following::p[4]")
 		private WebElement email;
 		
 		
@@ -240,10 +238,10 @@ public class FundingPartnersHomePage extends BaseClass {
 		@FindBy(id = "inactive")
 		private WebElement editInactiveFlg;
 
-		@FindBy(xpath = "//label[text()='Notes:']//following-sibling::div/input")
+		@FindBy(xpath = "//label[text()='Notes:']//following-sibling::div/textarea")
 		private WebElement editNotes;
 
-		@FindBy(xpath = "//div[@class='modal-dialog']//button[@type='button'][normalize-space()='Update']")
+		@FindBy(xpath = "//label[text()='Notes:']//following::button[@type='button' and text()='Update']")
 		private WebElement updateFundPartnerBtn;
 
 		// Getters for WebElements
