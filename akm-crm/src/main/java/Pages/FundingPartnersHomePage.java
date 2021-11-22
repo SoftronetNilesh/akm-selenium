@@ -246,6 +246,7 @@ public class FundingPartnersHomePage extends BaseClass {
 
 		// Getters for WebElements
 		public WebElement getEditName() {
+			
 			return editName;
 		}
 

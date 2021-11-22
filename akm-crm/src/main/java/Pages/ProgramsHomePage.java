@@ -6,16 +6,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import Base.BaseClass;
 
-public class Programs extends BaseClass {
+public class ProgramsHomePage extends BaseClass {
 
-	public Programs() {
+	public ProgramsHomePage() {
 
 		super();
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//app-sidebar-nav-link-content[normalize-space()='Programs']")
-	private WebElement ProgramsModuleLink;
+	@FindBy(css = ".card-body.card_table_body")
+	private WebElement ProgramsModule;
 
 	@FindBy(xpath = " //input[@placeholder='Search']")
 	private WebElement SearchBox;
@@ -23,17 +23,33 @@ public class Programs extends BaseClass {
 	@FindBy(xpath = "//button[normalize-space()='Add']")
 	private WebElement AddMembershipProgram;
 
+	@FindBy(xpath = "(//button[normalize-space()='Add'])[1]")
+	private WebElement addProgramBtn;
+	
 	//Getters for WebElements
-	public WebElement getProgramsModuleLink() {
-		return ProgramsModuleLink;
+	public WebElement getProgramsModule() {
+		return ProgramsModule;
 	}
 
 	public WebElement getSearchBox() {
 		return SearchBox;
 	}
 
+	public WebElement getAddMembershipProgramBtn() {
+		return AddMembershipProgram;
+	}
+
 	public WebElement getAddMembershipProgram() {
 		return AddMembershipProgram;
+	}
+
+	public WebElement getAddProgramBtn() {
+		return addProgramBtn;
+	}
+	
+	public AddMembershipProgram clickAddPrograms() {
+		addProgramBtn.click();
+		return new AddMembershipProgram();
 	}
 
 	public static class AddMembershipProgram{
@@ -46,14 +62,14 @@ public class Programs extends BaseClass {
 		@FindBy(xpath = "//label[text()='Name:']//following-sibling::div//input")
 		private WebElement Name;
 
-		@FindBy(xpath = "//label[text()='Description:']//following-sibling::div")
+		@FindBy(css = ".ql-editor")
 		private WebElement Description;
 
-		@FindBy(xpath="//input[@id='is_inactive']") 
+		@FindBy(css=".custom-control.custom-checkbox.custom-control-inline") 
 		private WebElement InactiveCheckbox;
-
-		@FindBy(xpath = "//button[normalize-space()='Add']")
-		private WebElement AddButton;
+		
+		@FindBy(xpath = "(//button[normalize-space()='Add'])[2]")
+		private WebElement addProgramBtn;
 		
 		//Getters for WebElements
 		public WebElement getName() {
@@ -69,8 +85,9 @@ public class Programs extends BaseClass {
 		}
 
 		public WebElement getAddButton() {
-			return AddButton;
+			return addProgramBtn;
 		}
+
 	}
 
 	public static class EditProgram{
